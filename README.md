@@ -8,4 +8,14 @@ Wikimedia offers ready database backup dumps and you can choose the latest compl
 First, it is needed to select the newest version of completed backup, [in here](https://dumps.wikimedia.org/enwiki/). (Sometimes latest version can incomplete.) Dump pages offers different types of alternative such as article pages only or including talk and  user pages. It is better to check [here](https://en.wikipedia.org/wiki/Wikipedia:Database_download#English-language_Wikipedia) to identify which option covers your work needs. Depending on the nature of your work, you can work with the partitioned files or a merged single file. In this work, we will download the partitioned files of only articles (no talk or user pages). Backups are bz2 compressed XML files.
 
 ## Prerequisites
-...
+BeautifulSoup and Keras is needed to download the pages.
+
+```
+pip install BeautifulSoup
+pip install Keras
+```
+The default save location for Keras is
+```
+~/.keras/datasets/
+``` 
+In Windows, it is needed to run the code in keras location.
